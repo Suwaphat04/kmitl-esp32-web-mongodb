@@ -9,7 +9,7 @@
 const char* WIFI_SSID = "YOUR_WIFI_SSID";
 const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
 // e.g. "http://192.168.1.10:8080" or your Render URL
-String BACKEND_URL = "http://10.0.0.2:8080";
+String BACKEND_URL = "https://kmitl-esp32-backend.onrender.com";
 
 // ---- SENSOR PLACEHOLDER ----
 // If your KMITL-FIGHT board exposes temperature/humidity via a specific sensor,
