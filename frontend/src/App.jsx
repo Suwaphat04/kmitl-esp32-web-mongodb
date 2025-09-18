@@ -84,23 +84,6 @@ export default function App() {
           ) : <div className="muted">No data yet. Try sending a test reading below.</div>}
         </div>
       </div>
-
-      <div className="box" style={{marginTop:'1rem'}}>
-        <h3>Send Test Reading (no board yet)</h3>
-        <div className="row">
-          <div style={{flex:'1 1 180px'}}>
-            <label>Temperature (°C)</label>
-            <input type="number" step="0.1" value={fakeTemp} onChange={e=>setFakeTemp(e.target.value)} />
-          </div>
-          <div style={{flex:'1 1 180px'}}>
-            <label>Humidity (%)</label>
-            <input type="number" step="1" value={fakeHum} onChange={e=>setFakeHum(e.target.value)} />
-          </div>
-        </div>
-        <button onClick={sendFake} disabled={sending} style={{marginTop:'.75rem'}}>
-          {sending ? "Sending..." : "Send to Backend"}
-        </button>
-      </div>
     </div>
   );
 }
